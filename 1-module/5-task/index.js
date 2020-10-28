@@ -5,7 +5,7 @@
  * @returns {string}
  */
 function truncate(str, maxlength) {
-  let strEnd = "…";
+  const strEnd = "…";
 
   if (str.length >= maxlength) {
     return str.slice(0, maxlength - strEnd.length) + strEnd;
